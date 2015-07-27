@@ -7,12 +7,13 @@ public class InsertionSort {
 		int i;
 		int[] list;
 		list = new int[10];
+		//randomize array
 		Random rand = new Random();
 		for(i = 0; i < list.length; i++){
 			list[i] = rand.nextInt(100) + 1;
 		}
+		//execute Insertion Sort
 		InsertionSort(list);
-		
 	}
 	
 	public static void InsertionSort(int[] list){
