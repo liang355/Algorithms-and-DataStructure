@@ -1,7 +1,16 @@
+import java.util.*;
+
+
 
 public class InsertionSort {
 	public static void main(String[] args){
-		int[] list = {4, 9, 2, 7, 8, 5, 1, 3, 6};
+		int i;
+		int[] list;
+		list = new int[10];
+		Random rand = new Random();
+		for(i = 0; i < list.length; i++){
+			list[i] = rand.nextInt(100) + 1;
+		}
 		InsertionSort(list);
 		
 	}
